@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>ALUNA AMOR Y ALMA</title>
 <style>
-  /* Fondo borroso degradado */
+  /* Fondo rosa degradado borroso */
   body {
     margin: 0;
     padding: 0;
@@ -12,36 +12,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url('imagenes/fondo.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-  }
-
-  /* Capa de overlay para suavizar y dar efecto “camuflado” */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(250, 218, 221, 0.5); /* rosa pastel semitransparente */
-    backdrop-filter: blur(10px); /* desenfoque */
-    z-index: -1;
+    background: linear-gradient(rgba(250,218,221,0.5), rgba(255,228,225,0.5));
+    backdrop-filter: blur(10px);
   }
 
   /* Centrar todas las imágenes y hacerlas responsivas */
   img {
     display: block;
-    margin: 20px auto;
-    max-width: 90%;
+    margin: 20px auto;   /* espacio entre imágenes */
+    max-width: 90%;      /* se adapta a cualquier pantalla */
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
+    border-radius: 15px; /* bordes suaves */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra ligera */
+    transition: transform 0.3s; /* efecto hover opcional */
   }
 
-  /* Efecto hover opcional para que se vea más dinámico */
+  /* Efecto hover opcional */
   img:hover {
     transform: scale(1.02);
   }
